@@ -1,5 +1,6 @@
 import React from 'react';
 import agent from '../../agent';
+import { Link } from 'react-router-dom';
 
 const Tags = props => {
   const tags = props.tags;
@@ -14,13 +15,13 @@ const Tags = props => {
             };
 
             return (
-              <a
-                href=""
+              <Link
+                to=""
                 className="tag-default tag-pill"
                 key={tag}
                 onClick={handleClick}>
                 {tag}
-              </a>
+              </Link>
             );
           })
         }

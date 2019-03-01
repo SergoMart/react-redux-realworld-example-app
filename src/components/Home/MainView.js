@@ -3,6 +3,7 @@ import React from 'react';
 import agent from '../../agent';
 import { connect } from 'react-redux';
 import { CHANGE_TAB } from '../../constants/actionTypes';
+import { Link } from 'react-router-dom'
 
 const YourFeedTab = props => {
   if (props.token) {
@@ -13,11 +14,11 @@ const YourFeedTab = props => {
 
     return (
       <li className="nav-item">
-        <a  href=""
+        <Link  to=""
             className={ props.tab === 'feed' ? 'nav-link active' : 'nav-link' }
             onClick={clickHandler}>
           Your Feed
-        </a>
+        </Link>
       </li>
     );
   }
@@ -31,12 +32,12 @@ const GlobalFeedTab = props => {
   };
   return (
     <li className="nav-item">
-      <a
-        href=""
+      <Link
+        to=""
         className={ props.tab === 'all' ? 'nav-link active' : 'nav-link' }
         onClick={clickHandler}>
         Global Feed
-      </a>
+      </Link>
     </li>
   );
 };
@@ -48,9 +49,9 @@ const TagFilterTab = props => {
 
   return (
     <li className="nav-item">
-      <a href="" className="nav-link active">
+      <Link to="" className="nav-link active">
         <i className="ion-pound"></i> {props.tag}
-      </a>
+      </Link>
     </li>
   );
 };

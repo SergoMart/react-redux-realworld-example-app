@@ -2,6 +2,7 @@ import React from 'react';
 import agent from '../agent';
 import { connect } from 'react-redux';
 import { SET_PAGE } from '../constants/actionTypes';
+import { Link } from 'react-router-dom'
 
 const mapDispatchToProps = dispatch => ({
   onSetPage: (page, payload) =>
@@ -43,7 +44,7 @@ const ListPagination = props => {
                 onClick={onClick}
                 key={v.toString()}>
 
-                <a className="page-link" href="">{v + 1}</a>
+                <Link className="page-link" to="">{v + 1}</Link>
 
               </li>
             );
