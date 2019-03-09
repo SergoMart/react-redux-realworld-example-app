@@ -1,6 +1,6 @@
 {
   "name": "react-redux-realworld-example-app",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "devDependencies": {
     "cross-env": "^5.2.0",
@@ -10,8 +10,8 @@
     "history": "^4.7.2",
     "marked": "^0.6.1",
     "prop-types": "^15.7.2",
-    "react": "^16.8.3",
-    "react-dom": "^16.8.3",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
     "react-redux": "^5.0.7",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
