@@ -46,10 +46,10 @@ class Login extends React.Component {
           <div className="row">
 
             <div className="col-md-6 offset-md-3 col-xs-12">
-              <h1 className="text-xs-center">Sign In</h1>
+              <h1 className="text-xs-center">Вход в систему</h1>
               <p className="text-xs-center">
                 <Link to="/register">
-                  Need an account?
+                  Требуется регистрация?
                 </Link>
               </p>
 
@@ -71,7 +71,7 @@ class Login extends React.Component {
                     <input
                       className="form-control form-control-lg"
                       type="password"
-                      placeholder="Password"
+                      placeholder="Пароль"
                       value={password}
                       onChange={this.changePassword} />
                   </fieldset>
@@ -80,13 +80,47 @@ class Login extends React.Component {
                     className="btn btn-lg btn-primary pull-xs-right"
                     type="submit"
                     disabled={this.props.inProgress}>
-                    Sign in
+                    Войти
                   </button>
 
                 </fieldset>
               </form>
             </div>
 
+            <div className="form-group col-md-6 offset-md-3 col-xs-12">
+
+<h3 className="text-xs-center">Вход используя соцсети</h3>
+<div className="btn-toolbar" >
+<button
+                    className="btn btn-warning"
+                    type="submit"
+                    disabled={this.props.inProgress}>
+                    Yandex
+                  </button>
+
+                  <button
+                    className="btn btn-info"
+                    type="submit"
+                    disabled={this.props.inProgress}>
+                    Facebook
+                  </button>
+
+                  <button
+                    className="btn btn-default"
+                    type="submit"
+                    disabled={this.props.inProgress}>
+                    Twitter
+                  </button>
+
+                  <button
+                    className="btn btn-danger"
+                    type="submit"
+                    disabled={this.props.inProgress}>
+                    Google
+                  </button>
+          </div>        
+
+</div>
           </div>
         </div>
       </div>
