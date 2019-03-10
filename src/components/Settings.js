@@ -78,7 +78,7 @@ class SettingsForm extends React.Component {
             <input
               className="form-control form-control-lg"
               type="text"
-              placeholder="Username"
+              placeholder="Имя пользователя"
               value={this.state.username}
               onChange={this.updateState('username')} />
           </fieldset>
@@ -86,8 +86,8 @@ class SettingsForm extends React.Component {
           <fieldset className="form-group">
             <textarea
               className="form-control form-control-lg"
-              rows="8"
-              placeholder="Short bio about you"
+              rows="3"
+              placeholder="Несколько слов о себе"
               value={this.state.bio}
               onChange={this.updateState('bio')}>
             </textarea>
@@ -106,7 +106,7 @@ class SettingsForm extends React.Component {
             <input
               className="form-control form-control-lg"
               type="password"
-              placeholder="New Password"
+              placeholder="Новый пароль"
               value={this.state.password}
               onChange={this.updateState('password')} />
           </fieldset>
@@ -115,7 +115,7 @@ class SettingsForm extends React.Component {
             className="btn btn-lg btn-primary pull-xs-right"
             type="submit"
             disabled={this.state.inProgress}>
-            Update Settings
+            Сохранить изменения
           </button>
 
         </fieldset>
@@ -144,7 +144,7 @@ class Settings extends React.Component {
           <div className="row">
             <div className="col-md-6 offset-md-3 col-xs-12">
 
-              <h1 className="text-xs-center">Your Settings</h1>
+              <h3 className="text-xs-center">Параметры учетной записи</h3>
 
               <ListErrors errors={this.props.errors}></ListErrors>
 
@@ -157,7 +157,7 @@ class Settings extends React.Component {
               <button
                 className="btn btn-outline-danger"
                 onClick={this.props.onClickLogout}>
-                Or click here to logout.
+                Разлогинится.
               </button>
 
             </div>
