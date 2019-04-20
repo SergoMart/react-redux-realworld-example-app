@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fb989ee6-8614-4f8c-96c2-d3b75e92af21/deploy-status)](https://app.netlify.com/sites/fervent-goldberg-1227b4/deploys)
+
 # ![React + Redux Example App](project-logo.png)
 
 [![RealWorld Frontend](https://img.shields.io/badge/realworld-frontend-%23783578.svg)](http://realworld.io)
