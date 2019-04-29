@@ -107,7 +107,7 @@ class Editor extends React.Component {
                     <input
                       className="form-control form-control-lg"
                       type="text"
-                      placeholder="Article Title"
+                      placeholder="Заголовок материала"
                       value={this.props.title}
                       onChange={this.changeTitle} />
                   </fieldset>
@@ -161,7 +161,7 @@ class Editor extends React.Component {
                     type="button"
                     disabled={this.props.inProgress}
                     onClick={this.submitForm}>
-                    Publish Article
+                    Публикация
                   </button>
 
                 </fieldset>

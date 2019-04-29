@@ -12,7 +12,7 @@ const ArticleList = props => {
   if (props.articles.length === 0) {
     return (
       <div className="article-preview">
-        Никакие материалы пока не размещены... то ли еще будет...
+        В данном разделе материалов не найдено.
       </div>
     );
   }
